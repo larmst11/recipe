@@ -1,0 +1,609 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: rgba(122, 191, 191, .5);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0 auto;
+    width: 414px;
+    background-color: #F2F2F2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#mainLogo {
+    position: absolute;
+    top: 0;
+    background-color: #EB5428;
+    width: 414px;
+    padding: 10px 0;
+    z-index: 1;
+}
+
+#mainLogo figcaption {
+    display: none;
+}
+
+#mainMenu {
+    position: relative;
+    top: -3010px;
+
+    background-color: #ffffff;
+    color: black;
+    width: 75px;
+    padding: 10px 0 11px 0;
+    z-index: 3;
+}
+
+#navList {
+    position: absolute;
+    top: 84px;
+    width: 414px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #ffffff;
+    z-index: 4;
+    transform: translateY(-300px);
+    transition: 0.3s ease-in-out;
+}
+
+#navList img {
+    width: 50px;
+    padding-top: 10px;
+}
+
+#navList figcaption:last-of-type {
+    padding-bottom: 7.5px;
+}
+
+#navList a {
+    color: #EB5428;
+}
+
+.navItem {
+    text-align: center;
+    padding: 5px;
+}
+
+nav label {
+    cursor: pointer;
+    display: inline-block;
+    width: 75px;
+    height: 84px;
+    background-color: transparent;
+    position: relative;
+    top: -3094px;
+    z-index: 5;
+    user-select: none;
+}
+
+nav input {
+    position: absolute;
+    top: 0;
+}
+
+nav input:checked ~ #navList {
+    transform: translateY(0);
+}
+
+#signIn {
+    position: relative;
+    top: -3182px;
+    left: 339px;
+    background-color: #ffffff;
+    color: black;
+    width: 75px;
+    padding: 10px 0 11px 0;
+    z-index: 2;
+}
+
+#searchBar {
+    position: relative;
+    top: -3085px;
+    left: -23px;
+}
+
+#searchBar input {
+    border-radius: 0;
+    border: solid 2px #EB5428;
+    height: 45px;
+    width: 250px;
+}
+
+#searchBar label {
+    position: absolute;
+    top: 27px;
+    left: 5px;
+    font-size: 12px;
+    color: grey;
+}
+
+#searchBar button {
+    position: relative;
+    top: 14px;
+    left: -10px;
+    border-radius: 0;
+    border: solid 1px #EB5428;
+    background-color: #EB5428;
+    height: 45px;
+    width: 55px;
+    color: #ffffff;
+}
+
+h1, h2, h3, figcaption, footer {
+    font-family: 'Bebas Neue', cursive;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 225px;
+}
+
+h1 a {
+    color: black;
+}
+
+#actionsMenu {
+    display: flex;
+    list-style: none;
+}
+
+#actionsMenu figure {
+    width: 103.5px;
+    margin: 25px 0 5px 0;
+}
+
+#actionsMenu figcaption {
+    color: #EB5428;
+    position: relative;
+    top: -5px;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+main > section {
+    padding: 5px 10px 0 10px;
+    margin:  20px 0 0 0;
+}
+
+#tacosImg {
+    width: 100%;
+}
+
+dt {
+    display: inline;
+}
+
+dd {
+    display: inline;
+}
+
+#about {
+    padding: 10px 10px 0 10px;
+    line-height: 25px;
+}
+
+#about p:first-of-type {
+    margin-bottom: 15px;
+}
+
+#details dt {
+    font-weight: 700;
+    padding-right: 15px;
+    line-height: 22px;
+}
+
+#ingredients ul {
+    list-style: square;
+    padding-left: 20px;
+    line-height: 30px;
+}
+
+#ingredients li {
+    padding-left: 10px;
+}
+
+#directions ol {
+    padding-left: 20px;
+    line-height: 25px;
+}
+
+#directions li {
+    padding: 15px 0 0 10px;
+}
+
+#sideDishes {
+    background-color: #7ABFBF;
+}
+
+#sideDishes h2 {
+    margin-bottom: 25px;
+}
+
+#sideDishes img {
+    width: 100px;
+}
+
+#sideDishes h3 {
+    position: relative;
+    top: 27px;
+    left: 122px;
+}
+
+#sideDishes > section {
+    position: relative;
+    top: -32px;
+    width: 370px;
+    height: 150px;
+}
+
+#sideDishes p {
+    position: relative;
+    top: -70px;
+    left: 122px;
+}
+
+#sideDishes dt {
+    font-weight: 700;
+    position: relative;
+    top: -70px;
+    left: 122px;
+}
+
+#sideDishes dd {
+    position: relative;
+    top: -47px;
+    left: 86px;
+}
+
+.star {
+    position: relative;
+    top: 4px;
+    left: -25px;
+}
+
+figure {
+    display: inline-block;
+    text-align: center;
+}
+
+footer {
+    padding: 50px 0 25px 0;
+    text-align: center;
+    height: 30px;
+}
+
+footer h2 {
+    display: none;
+}
+
+#socialLinks {
+    display: flex;
+    position: relative;
+    top: -280px;
+}
+
+footer figure {
+    width: 103.5px;
+}
+
+footer figcaption {
+    color: #EB5428;
+    position: relative;
+    top: -5px;
+}
+
+footer img {
+    width: 150px;
+    padding: 15px 0;
+}
+
+footer p {
+    font-size: 20px;
+    line-height: 18px;
+}
+
+#copyrightImg {
+    position: relative;
+    top: -280px;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    body {
+        width: 768px;
+    }
+
+    #mainLogo {
+        width: 84px;
+    }
+
+    #mainMenu {
+        display: none;
+    }
+
+    #signIn {
+        top: -2719px;
+        left: 84px;
+        padding-left: 609px;
+    }
+
+    #searchBar {
+        top: -2795px;
+        left: 380px;
+        z-index: 5;
+    }
+
+    #navList {
+        display: flex;
+        transform: none;
+        transition: none;
+        padding: 5px 15px;
+        width: 738px;
+        justify-content: space-between;
+    }
+
+    #navList img {
+        width: 65px;
+    }
+
+    h1 {
+        text-align: left;
+        padding: 230px 0 15px 15px;
+    }
+
+    #actionsMenu {
+        width: 668px;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 0 50px 10px 50px;
+        justify-content: space-between;
+    }
+    
+    #details {
+        text-align: center;
+    }
+
+    #ingredients {
+        width: 200px;
+        display: inline-block;
+    }
+
+    #directions {
+        width: 500px;
+        display: inline-block;
+        margin-top: 0;
+        position: relative;
+        top: -25px;
+    }
+
+    #sideDishes {
+        height: 365px;
+    }
+
+    #sideDishes > section {
+        display: inline-block;
+    }
+
+    footer {
+        height: 1px;
+    }
+
+    #socialLinks {
+        position: relative;
+        top: -250px;
+        left: 445px;
+    }
+
+    #socialLinks figure {
+        width: 80px;
+    }
+
+    footer img {
+        width: 200px;
+    }
+
+    #copyrightImg {
+        position: relative;
+        top: -335px;
+        left: -200px;
+    }
+
+}
+
+
+
+
+
+@media screen and (min-width: 1280px) {
+
+    body {
+        width: 1280px;
+    }
+
+    #mainLogo {
+        width: 100px;
+        height: 84px;
+    }
+
+    #mainLogo svg, #mainLogo figcaption {
+        position: relative;
+        top: 10px;
+    }
+
+    #navList {
+        position: relative;
+        top: -2164px;
+        left: 100px;
+        height: 94px;
+        width: 780px;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    .navItem {
+        position: relative;
+        top: -10px;
+    }
+
+    #signIn {
+        padding-left: 0;
+        height: 84px;
+        width: 100px;
+        top: -2269px;
+        left: 1180px;
+        z-index: 6;
+    }
+
+    #signIn svg, #signIn figcaption {
+        position: relative;
+        top: 10px;
+    }
+
+    #searchBar {
+        top: -2150px;
+        left: 395px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    #actionsMenu {
+        position: relative;
+        padding: 0;
+        width: 100px;
+        padding-bottom: 390px;
+        border: solid 2px #EB5428;
+        display: grid;
+        grid-template-columns: 1fr;
+        float: left;
+    }
+
+    #tacosImg {
+        display: inline-block;
+        width: 40%;
+        clear: both;
+    }
+
+    #about {
+        width: 635px;
+        display: inline-block;
+        position: relative;
+        top: -560px;
+    }
+
+    #details {
+        background-color: black;
+        color: #7ABFBF;
+        padding-bottom: 15px;
+        margin: 0;
+    }
+
+    #detailDLs {
+        display: flex;
+        padding-left: 60px;
+    }
+
+    #details dl {
+        width: 225px;
+    }
+
+    #detailDLs dt, #detailDLs dd {
+        display: block;
+        width: 225px;
+    }
+
+    #details h2 {
+        padding-bottom: 15px;
+    }
+
+    #directions {
+        width: 1000px;
+        top: -150px;
+    }
+
+    #sideDishes {
+        height: 450px;
+    }
+
+    #sideDishes > section {
+        position: relative;
+        width: 300px;
+    }
+
+    #sideDishes img {
+        width: 260px;
+    }
+
+    #sideDishes img:first-of-type {
+        padding-left: 43px;
+    }
+
+    #sideDishes h3 {
+        top: 300px;
+        left: 43px;
+    }
+
+    #sideDishes p {
+        top: 50px;
+        left: 43px;
+    }
+
+    #sideDishes dt {
+        top: 50px;
+        left: 43px;
+    }
+
+    #sideDishes dd {
+        top: 50px;
+        left: 78px;
+    }
+    
+    footer {
+        height: 1px;
+    }
+
+    footer img {
+        position: relative;
+        left: -325px;
+    }
+
+    footer p {
+        position: relative;
+        top: -200px;
+        left: -160px;
+        font-size: 25px;
+    }
+
+    #socialLinks {
+        left: 620px;
+    }
+
+    #socialLinks figure {
+        width: 165px;
+    }
+
+}
